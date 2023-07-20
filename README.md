@@ -16,3 +16,20 @@ Time & space complexity: The complexity of this solution is O(n), where n is the
 ``` bash
 python 1_missing_numbers.py
 ```
+
+# Problem 2 solution
+
+_Please review 2_two_sum.py_
+
+
+1. The function "two_sum" takes a list of integers nums and an integer target as input.
+2. It initializes an empty dictionary num_dict to store the complement of each number encountered in the nums list and its corresponding index.
+3. Then iterates through the nums list, calculates the complement of the current number with respect to the target, and checks if the complement exists in the num_dict.
+4. If the complement is found in the dictionary, it means we have found two numbers that add up to the target, and the function returns their indices.
+5. If the complement is not found, the current number and its index are added to the dictionary for future reference.
+
+Time & space complexity: The time complexity of this solution is O(n), where n is the length of the input nums list. The function iterates through the list once, and each dictionary operation (lookup, insertion) takes constant time on average. In the worst case, the function may need to store all n elements of the nums list in the dictionary.
+
+``` bash
+python 2_two_sum.py
+```
